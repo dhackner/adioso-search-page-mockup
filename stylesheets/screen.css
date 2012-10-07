@@ -67,8 +67,122 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 10, ../sass/screen.scss */
-ul li {
+/* line 14, ../sass/screen.scss */
+div {
+  display: block;
+}
+
+/* line 20, ../sass/screen.scss */
+div.boxes ul li {
   font-size: 100%;
   display: inline;
+}
+
+/* line 27, ../sass/screen.scss */
+.main {
+  background-color: #f4f4f4;
+  padding: 0 18px;
+}
+/* line 32, ../sass/screen.scss */
+.main div.header {
+  margin: 0 0 10px;
+}
+/* line 34, ../sass/screen.scss */
+.main div.header span.description {
+  font: 300 18px/25px "Helvetica Neue", sans-serif;
+}
+/* line 38, ../sass/screen.scss */
+.main div.header button.watch-button {
+  float: right;
+}
+/* line 44, ../sass/screen.scss */
+.main div.header div div.breadcrumbs span:first-child:before {
+  content: "";
+}
+/* line 47, ../sass/screen.scss */
+.main div.header div div.breadcrumbs span:before {
+  content: ">";
+}
+/* line 51, ../sass/screen.scss */
+.main div.header div ul.social-buttons {
+  float: right;
+}
+/* line 55, ../sass/screen.scss */
+.main div.header div.filters-container {
+  background-color: #b6ffd0;
+  font: 300 18px/25px "Helvetica Neue", sans-serif;
+}
+/* line 62, ../sass/screen.scss */
+.main div.graph-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 70, ../sass/screen.scss */
+.main div.active-filter-wrapper div.filters-list {
+  background-color: #e5e5e5;
+}
+/* line 72, ../sass/screen.scss */
+.main div.active-filter-wrapper div.filters-list button {
+  font-size: 13px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4B4B4B', endColorstr='#FF181818');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #5f5f5f), color-stop(51%, #4b4b4b));
+  background: -webkit-linear-gradient(#5f5f5f 50%, #4b4b4b 51%);
+  background: -moz-linear-gradient(#5f5f5f 50%, #4b4b4b 51%);
+  background: -o-linear-gradient(#5f5f5f 50%, #4b4b4b 51%);
+  background: linear-gradient(#5f5f5f 50%, #4b4b4b 51%);
+  -webkit-box-shadow: #868686 0 1px 0 inset;
+  -moz-box-shadow: #868686 0 1px 0 inset;
+  box-shadow: #868686 0 1px 0 inset;
+  border: 1px solid #3e3e3e;
+  color: #b0b0b0;
+  text-shadow: #1e1e1e 0 -1px 0;
+}
+/* line 15, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.main div.active-filter-wrapper div.filters-list button:hover {
+  text-decoration: none;
+}
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.main div.active-filter-wrapper div.filters-list button:hover {
+  background-color: #393939;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #4e4e4e), color-stop(51%, #393939));
+  background: -webkit-linear-gradient(#4e4e4e 50%, #393939 51%);
+  background: -moz-linear-gradient(#4e4e4e 50%, #393939 51%);
+  background: -o-linear-gradient(#4e4e4e 50%, #393939 51%);
+  background: linear-gradient(#4e4e4e 50%, #393939 51%);
+}
+/* line 33, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.main div.active-filter-wrapper div.filters-list button:active {
+  -webkit-box-shadow: #373737 0 1px 2px inset;
+  -moz-box-shadow: #373737 0 1px 2px inset;
+  box-shadow: #373737 0 1px 2px inset;
+}
+/* line 6, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.main div.active-filter-wrapper div.filters-list button.disabled, .main div.active-filter-wrapper div.filters-list button[disabled] {
+  opacity: 0.6;
+  background: #4b4b4b;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/_sassy-buttons.sass */
+.main div.active-filter-wrapper div.filters-list button::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 79, ../sass/screen.scss */
+.main div.today {
+  background-color: #e5e5e5;
+  margin: 0 0 10px;
+  padding: 25px 0px;
 }

@@ -4,11 +4,82 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-$adioso-orange-color: #f57931;
+@import "sassy-buttons";
+$adioso-orange-color          : #f57931;
+$filters-container-background : #b6ffd0;
+$grey-background              : #f4f4f4;
+$dark-grey-background         : #e5e5e5;
+$base-font                    : 300 18px/25px "Helvetica Neue", sans-serif;
 
-ul {
-  li {
-	  font-size : 100%;
-	  display   : inline;
+div {
+	display: block;
+}
+
+div.boxes {
+	ul {
+		li {
+			font-size : 100%;
+			display   : inline;
+		}
 	}
 }
+
+.main {
+	background-color : $grey-background;
+	padding          : 0 18px;
+
+//	width: 940px;
+	div.header {
+		margin:0 0 10px;
+		span.description {
+//			float: left;
+			font: $base-font;
+		}
+		button.watch-button {
+			float : right;
+		}
+		div {
+			div.breadcrumbs {
+//				float:left;
+				span:first-child:before {
+					content : "";
+				}
+				span:before {
+					content: ">";
+				}
+			}
+			ul.social-buttons {
+				float:right;
+			}
+		}
+		div.filters-container {
+			background-color : $filters-container-background;
+			font : $base-font;
+		}
+	}
+
+	div.graph-container {
+		img {
+			display      : block;
+			margin-left  : auto;
+			margin-right : auto;
+		}
+	}
+
+	div.active-filter-wrapper {
+		div.filters-list {
+			background-color : $dark-grey-background;
+			button {
+				@include sassy-button("glass", 10px, 13px, #4b4b4b, #4b4b4b, #b0b0b0);
+			}
+		}
+	}
+
+
+	div.today {
+		background-color : $dark-grey-background;
+		margin           : 0 0 10px;
+		padding          : 25px 0px;
+	}
+}
+
