@@ -4,13 +4,10 @@
     <title>
       Flights Page
     </title>
-
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-    <!--[if IE]>
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css"><!--[if IE]>
         <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
-
   </head>
   <body>
     <div class="boxes">
@@ -24,19 +21,37 @@
         <li>RETURNING
         </li>
       </ul>
+      <span>Did you mean: Melbourne, Florida, US</span>
     </div>
     <div class="main">
       <div class="header">
-        <span class="description">Cheap flights Melbourne to Osaka</span>
-        <button class="watch-button">Watch Price</button>
+        <span class="description">Cheap flights Melbourne to Osaka</span> <button class="watch-button">Watch Price</button>
+        <div>
+          <div class="breadcrumbs">
+            <span>Australia</span><span>Melbourne</span><span>International</span><span>Japan</span><span>Osaka</span>
+          </div>
+          <ul class="social-buttons">
+            <li>
+              <img src="images/fb-like.png">
+            </li>
+          </ul>
+        </div>
         <div class="filters-container">
-          We hope you don't mind<br />
+          We hope you don't mind<br>
           We altered your results because XXX
         </div>
       </div>
-
-      <div class="graph-container"></div>
-      <div class="prices-container"></div>
+      <div class="graph-container">
+        <span>Price Graph</span>
+        <img src="images/graph.png">
+      </div>
+      <div class="active-filters">
+        <span>Active Filters</span>
+      </div>
+      <span>Tuesday 3rd February</span>
+      <div class="prices-container">
+        <div class="price-box"></div>
+      </div>
     </div>
   </body>
 </html>
