@@ -9,11 +9,7 @@ $adioso-orange-color          : #f57931;
 $filters-container-background : #b6ffd0;
 $grey-background              : #f4f4f4;
 $dark-grey-background         : #e5e5e5;
-$base-font                    : 300 18px/25px "Helvetica Neue", sans-serif;
-
-div {
-	display: block;
-}
+$base-font                    : 300 23px/35px "Helvetica Neue", sans-serif;
 
 div.boxes {
 	ul {
@@ -22,30 +18,39 @@ div.boxes {
 			display   : inline;
 		}
 	}
+	margin:0 0 10px;
+	padding          : 0 18px;
 }
 
 .main {
 	background-color : $grey-background;
 	padding          : 0 18px;
-
-//	width: 940px;
 	div.header {
 		margin:0 0 10px;
-		span.description {
-//			float: left;
-			font: $base-font;
-		}
-		button.watch-button {
-			float : right;
+		display:block;
+		div {
+			display:inline;
+			span.description {
+				font: $base-font;
+				float: left;
+			}
+			button.watch-button {
+				@include sassy-button("glass", 5px, 13px, #829fb2);
+				float : right;
+			}
 		}
 		div {
+			clear : both;
+			display : inline;
 			div.breadcrumbs {
-//				float:left;
+				color : $adioso-orange-color;
+				float:left;
 				span:first-child:before {
 					content : "";
 				}
 				span:before {
-					content: ">";
+					color : black;
+					content: " > ";
 				}
 			}
 			ul.social-buttons {
@@ -53,8 +58,12 @@ div.boxes {
 			}
 		}
 		div.filters-container {
+			clear : both;
 			background-color : $filters-container-background;
+			display: block;
 			font : $base-font;
+			color : #50735C;
+			padding : 10px 25px;
 		}
 	}
 
@@ -70,11 +79,10 @@ div.boxes {
 		div.filters-list {
 			background-color : $dark-grey-background;
 			button {
-				@include sassy-button("glass", 10px, 13px, #4b4b4b, #4b4b4b, #b0b0b0);
+				@include sassy-button("glass", 5px, 11px, #4b4b4b, #4b4b4b, #b0b0b0);
 			}
 		}
 	}
-
 
 	div.today {
 		background-color : $dark-grey-background;
