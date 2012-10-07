@@ -1,0 +1,1 @@
+A prototype of @wernah's mockup for a new Adioso search results page.
