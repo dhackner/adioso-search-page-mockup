@@ -2,5 +2,5 @@ require 'rubygems'
 require 'sinatra' 
 
 get '/' do 
-	redirect '/mockup.html' 
+	redirect 'mockup.html' 
 end
