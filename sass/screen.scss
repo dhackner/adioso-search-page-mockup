@@ -6,11 +6,25 @@
 @import "compass/reset";
 @import "sassy-buttons";
 @import "compass/css3/border-radius";
+@import "susy";
+
+
+$total-columns  : 10;
+$column-width   : 10%;
+$gutter-width   : 0%;
+$grid-padding   : 3%;
+
+
 $adioso-orange-color          : #f57931;
 $filters-container-background : #b6ffd0;
 $grey                         : #f4f4f4;
 $dark-grey                    : #e5e5e5;
-$base-font                    : 300 23px/35px "Helvetica Neue", sans-serif;
+// $base-font                    : 300 14px/20px "Helvetica Neue", sans-serif;
+$big-font                     : 300 28px/35px "Helvetica Neue", sans-serif;
+
+//span {
+//	font : $base-font;
+//}
 
 div.boxes {
 	margin  : 0 0 10px;
@@ -55,31 +69,32 @@ div.boxes {
 }
 
 .main {
+	@include container;
+    
 	border-top-style : solid;
 	border-top-width : 1px;
 	border-top-color : $dark-grey;
 	background-color : $grey;
-	padding          : 0 18px;
 
 	div.header {
-		margin  : 0 0 10px;
-		display : block;
 		div {
+			padding-top   : 1%;
 			span.description {
-				font: $base-font;
-				float: left;
+				@include span-columns(5, 10);
+				font: $big-font;
 			}
 			button.watch-button {
+				@include prefix(4); @include span-columns(1 omega,10);
 				@include sassy-button("glass", 5px, 13px, #829fb2);
-				float : right;
 			}
 		}
 		div {
-			padding-top    : 15px;
-			padding-bottom : 25px;
+			@include span-columns(10 omega, 10);
+			padding-bottom   : 1%;
 			div.breadcrumbs {
+				padding-top : 2%;
 				color : $adioso-orange-color;
-				float : left;
+				@include span-columns(3, 10); @include suffix(2);
 				span:first-child:before {
 					content : "";
 				}
@@ -89,50 +104,56 @@ div.boxes {
 				}
 			}
 			div.social-buttons {
-				float : right;
+				@include prefix(2); @include span-columns(3 omega, 10);
+				img {
+					width : 100%;
+				}
 			}
 		}
 		div.filters-container {
-			clear            : both;
-			background-color : $filters-container-background;
-			display          : block;
-			font             : $base-font;
-			color            : #50735C;
-			padding          : 10px 25px;
+			@include span-columns(10 omega, 10, 3%);
 			@include border-radius(7px);
+			padding-top      : 2%;
+			padding-bottom   : 2%;
+			background-color : $filters-container-background;
+			font             : $big-font;
+			color            : #50735C;
 		}
 	}
 
 	div.graph-container {
+		@include span-columns(10 omega, 10);
 		img {
-			display      : block;
-			margin-left  : auto;
-			margin-right : auto;
+			width : 100%;
+			padding-top : 3%;
 		}
 	}
 
 	div.active-filter-wrapper {
+		span {
+			padding-bottom : 1%;
+		}
 		div.filters-list {
-			background-color : $dark-grey;
-			padding          : 4px;
+			@include span-columns(10 omega, 10, 1%);
 			@include border-radius(7px);
+			padding-top      : .5%;
+			padding-bottom   : .5%;
+			background-color : $dark-grey;
 			button {
 				@include sassy-button("glass", 5px, 11px, #4b4b4b, #4b4b4b, #b0b0b0);
 			}
 		}
 	}
 
-	div.spacer {
-		height: 50px;
-	}
-
 	div.today {
+		@include span-columns(2, 10, 3%);
+		@include border-right-radius(7px);
 		background-color : $dark-grey;
 		color            : #7f7f7f;
-		margin-left      : -18px;
-		padding          : 10px 0px 10px 18px;
-		width            : 200px;
-		@include border-right-radius(7px);
+		margin-top : 5%;
+		margin-left : -3%;
+		padding-top : 1%;
+		padding-bottom : 1%;
 	}
 }
 
