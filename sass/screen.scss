@@ -5,26 +5,56 @@
 
 @import "compass/reset";
 @import "sassy-buttons";
+@import "compass/css3/border-radius";
 $adioso-orange-color          : #f57931;
 $filters-container-background : #b6ffd0;
-$grey-background              : #f4f4f4;
-$dark-grey-background         : #e5e5e5;
+$grey                         : #f4f4f4;
+$dark-grey                    : #e5e5e5;
 $base-font                    : 300 23px/35px "Helvetica Neue", sans-serif;
 
 div.boxes {
+	margin  : 0 0 10px;
+	padding : 0 18px;
+	img {
+		display:block;
+	}
 	ul {
+		float:left;
 		li {
-			font-size : 100%;
-			display   : inline;
+			color     : #7f7f7f;
+			font-size : 50%;
+			display   : inline-block;
+			* {
+				display : block;
+			}
 		}
 	}
-	margin:0 0 10px;
-	padding          : 0 18px;
+	button.search-button {
+		float:right;
+		@include sassy-button("glass", 5px, 13px, $adioso-orange-color);
+	}
+	div {
+		clear:both;
+		padding-top:10px;
+		padding-bottom:20px; 
+		padding-left:15px;
+		padding-right:15px;
+		span.question {
+			color : $dark-grey;
+		}
+		span.suggestion {
+			color : #5496ea;
+		}
+	}
 }
 
 .main {
-	background-color : $grey-background;
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-top-color : $dark-grey;
+	background-color : $grey;
 	padding          : 0 18px;
+
 	div.header {
 		margin:0 0 10px;
 		display:block;
@@ -64,6 +94,7 @@ div.boxes {
 			font : $base-font;
 			color : #50735C;
 			padding : 10px 25px;
+			@include border-radius(7px);
 		}
 	}
 
@@ -77,17 +108,25 @@ div.boxes {
 
 	div.active-filter-wrapper {
 		div.filters-list {
-			background-color : $dark-grey-background;
+			background-color : $dark-grey;
+			padding : 4px;
+			@include border-radius(7px);
 			button {
 				@include sassy-button("glass", 5px, 11px, #4b4b4b, #4b4b4b, #b0b0b0);
 			}
 		}
 	}
 
+	div.spacer {
+		height: 50px;
+	}
+
 	div.today {
-		background-color : $dark-grey-background;
-		margin           : 0 0 10px;
-		padding          : 25px 0px;
+		background-color : $dark-grey;
+		color : #7f7f7f;
+		padding          : 10px 0px;
+		width : 200px;
+		@include border-right-radius(7px);
 	}
 }
 
