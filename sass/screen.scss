@@ -128,9 +128,10 @@ div.boxes {
 
 	div.today {
 		background-color : $dark-grey;
-		color : #7f7f7f;
-		padding          : 10px 0px;
-		width : 200px;
+		color            : #7f7f7f;
+		margin-left      : -18px;
+		padding          : 10px 0px 10px 18px;
+		width            : 200px;
 		@include border-right-radius(7px);
 	}
 }
