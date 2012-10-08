@@ -21,18 +21,24 @@ div.boxes {
 	ul {
 		float:left;
 		li {
-			color     : #7f7f7f;
-			font-size : 50%;
-			display   : inline-block;
-			* {
+			display : inline-block;
+			margin  : 5px 5px;
+			span {
+				color     : #7f7f7f;
+				font-size : 60%;
+				padding : 0px 5px;
+			}
+			input {
+				@include border-radius(7px);
+				padding : 10px 15px;
 				display : block;
+			}
+			button.search-button {
+				@include sassy-button("glass", 5px, 13px, $adioso-orange-color);
 			}
 		}
 	}
-	button.search-button {
-		float:right;
-		@include sassy-button("glass", 5px, 13px, $adioso-orange-color);
-	}
+
 	div {
 		clear:both;
 		padding-top:10px;
