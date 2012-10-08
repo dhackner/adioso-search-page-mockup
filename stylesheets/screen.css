@@ -82,17 +82,27 @@ div.boxes ul {
 }
 /* line 23, ../sass/screen.scss */
 div.boxes ul li {
-  color: #7f7f7f;
-  font-size: 50%;
   display: inline-block;
+  margin: 5px 5px;
 }
-/* line 27, ../sass/screen.scss */
-div.boxes ul li * {
+/* line 26, ../sass/screen.scss */
+div.boxes ul li span {
+  color: #7f7f7f;
+  font-size: 60%;
+  padding: 0px 5px;
+}
+/* line 31, ../sass/screen.scss */
+div.boxes ul li input {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  padding: 10px 15px;
   display: block;
 }
-/* line 32, ../sass/screen.scss */
-div.boxes button.search-button {
-  float: right;
+/* line 36, ../sass/screen.scss */
+div.boxes ul li button.search-button {
   font-size: 13px;
   padding: 0.5em 1.5em;
   display: inline-block;
@@ -117,11 +127,11 @@ div.boxes button.search-button {
   text-shadow: #c24d09 0 -1px 0;
 }
 /* line 15, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-div.boxes button.search-button:hover {
+div.boxes ul li button.search-button:hover {
   text-decoration: none;
 }
 /* line 30, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-div.boxes button.search-button:hover {
+div.boxes ul li button.search-button:hover {
   background-color: #f3630f;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f57c36), color-stop(51%, #f3630f));
   background: -webkit-linear-gradient(#f57c36 50%, #f3630f 51%);
@@ -130,13 +140,13 @@ div.boxes button.search-button:hover {
   background: linear-gradient(#f57c36 50%, #f3630f 51%);
 }
 /* line 33, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-div.boxes button.search-button:active {
+div.boxes ul li button.search-button:active {
   -webkit-box-shadow: #f1600c 0 1px 2px inset;
   -moz-box-shadow: #f1600c 0 1px 2px inset;
   box-shadow: #f1600c 0 1px 2px inset;
 }
 /* line 6, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-div.boxes button.search-button.disabled, div.boxes button.search-button[disabled] {
+div.boxes ul li button.search-button.disabled, div.boxes ul li button.search-button[disabled] {
   opacity: 0.6;
   background: #f57931;
   cursor: default;
@@ -145,11 +155,11 @@ div.boxes button.search-button.disabled, div.boxes button.search-button[disabled
   box-shadow: none;
 }
 /* line 73, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/_sassy-buttons.sass */
-div.boxes button.search-button::-moz-focus-inner {
+div.boxes ul li button.search-button::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 36, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 div.boxes div {
   clear: both;
   padding-top: 10px;
@@ -157,16 +167,16 @@ div.boxes div {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 42, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 div.boxes div span.question {
   color: #e5e5e5;
 }
-/* line 45, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 div.boxes div span.suggestion {
   color: #5496ea;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .main {
   border-top-style: solid;
   border-top-width: 1px;
@@ -174,21 +184,17 @@ div.boxes div span.suggestion {
   background-color: #f4f4f4;
   padding: 0 18px;
 }
-/* line 58, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .main div.header {
   margin: 0 0 10px;
   display: block;
 }
-/* line 61, ../sass/screen.scss */
-.main div.header div {
-  display: inline;
-}
-/* line 63, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .main div.header div span.description {
   font: 300 23px/35px "Helvetica Neue", sans-serif;
   float: left;
 }
-/* line 67, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .main div.header div button.watch-button {
   font-size: 13px;
   padding: 0.5em 1.5em;
@@ -247,30 +253,30 @@ div.boxes div span.suggestion {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 72, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .main div.header div {
-  clear: both;
-  display: inline;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
-/* line 75, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .main div.header div div.breadcrumbs {
   color: #f57931;
   float: left;
 }
-/* line 78, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .main div.header div div.breadcrumbs span:first-child:before {
   content: "";
 }
-/* line 81, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .main div.header div div.breadcrumbs span:before {
   color: black;
   content: " > ";
 }
-/* line 86, ../sass/screen.scss */
-.main div.header div ul.social-buttons {
+/* line 91, ../sass/screen.scss */
+.main div.header div div.social-buttons {
   float: right;
 }
-/* line 90, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .main div.header div.filters-container {
   clear: both;
   background-color: #b6ffd0;
@@ -284,13 +290,13 @@ div.boxes div span.suggestion {
   -o-border-radius: 7px;
   border-radius: 7px;
 }
-/* line 102, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .main div.graph-container img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 110, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .main div.active-filter-wrapper div.filters-list {
   background-color: #e5e5e5;
   padding: 4px;
@@ -300,7 +306,7 @@ div.boxes div span.suggestion {
   -o-border-radius: 7px;
   border-radius: 7px;
 }
-/* line 114, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .main div.active-filter-wrapper div.filters-list button {
   font-size: 11px;
   padding: 0.5em 1.5em;
@@ -358,15 +364,16 @@ div.boxes div span.suggestion {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 120, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .main div.spacer {
   height: 50px;
 }
-/* line 124, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .main div.today {
   background-color: #e5e5e5;
   color: #7f7f7f;
-  padding: 10px 0px;
+  margin-left: -18px;
+  padding: 10px 0px 10px 18px;
   width: 200px;
   -moz-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
