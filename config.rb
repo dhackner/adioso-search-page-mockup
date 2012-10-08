@@ -1,4 +1,6 @@
 # Require any additional compass plugins here.
+require 'sassy-buttons'
+require 'susy'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
@@ -22,5 +24,3 @@ javascripts_dir = "javascripts"
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
-
-require 'sassy-buttons'
