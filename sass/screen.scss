@@ -17,8 +17,13 @@ $darkest-grey                 : #7f7f7f;
 $base-font                    : 500 16px/20px "Helvetica Neue", sans-serif;
 $big-font                     : 200 30px/40px "Helvetica Neue", sans-serif;
 
+
 span {
 	font: $base-font;
+}
+
+body {
+	background-color : $grey;
 }
 
 div.boxes {
@@ -27,7 +32,8 @@ div.boxes {
 	$gutter-width  : 0%;
 	$grid-padding  : 3%;
 	@include container;
-	margin-bottom  : 1%;
+	padding-bottom  : 1%;
+	background-color : white;
 	img {
 		@include span-columns(1, 10);
 		margin-bottom  : 2%;
@@ -82,7 +88,6 @@ div.boxes {
 	border-top-style : solid;
 	border-top-width : 1px;
 	border-top-color : $dark-grey;
-	background-color : $grey;
 
 	div.header {
 		div {
