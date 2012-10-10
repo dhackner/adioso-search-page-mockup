@@ -1,6 +1,6 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
+ * Import this file using the following HTML or equivalent : 
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
@@ -8,15 +8,12 @@
 @import "sassy-buttons";
 @import "susy";
 
-$total-columns  : 10;
-$column-width   : 10%;
-$gutter-width   : 0%;
-$grid-padding   : 3%;
-
 $adioso-orange-color          : #f57931;
+$price-blue                   : #3B84DD;
 $filters-container-background : #b6ffd0;
 $grey                         : #f4f4f4;
 $dark-grey                    : #e5e5e5;
+$darkest-grey                 : #7f7f7f;
 $base-font                    : 500 16px/20px "Helvetica Neue", sans-serif;
 $big-font                     : 200 30px/40px "Helvetica Neue", sans-serif;
 
@@ -25,6 +22,10 @@ span {
 }
 
 div.boxes {
+	$total-columns : 10;
+	$column-width  : 10%;
+	$gutter-width  : 0%;
+	$grid-padding  : 3%;
 	@include container;
 	margin-bottom  : 1%;
 	img {
@@ -72,6 +73,10 @@ div.boxes {
 }
 
 .main {
+	$total-columns : 10;
+	$column-width  : 10%;
+	$gutter-width  : 0%;
+	$grid-padding  : 3%;
 	@include container;
     
 	border-top-style : solid;
@@ -155,8 +160,9 @@ div.boxes {
 		@include span-columns(2, 10); @include suffix(8, 10);
 		@include border-right-radius(7px);
 		background-color : $dark-grey;
-		color            : #7f7f7f;
+		color            : $darkest-grey;
 		margin-top       : 5%;
+		margin-bottom    : 1%;
 		margin-left      : -3%;
 		padding-top      : 1%;
 		padding-right    : 2%;
@@ -165,20 +171,47 @@ div.boxes {
 			@include prefix(1, 2); @include span-columns(1 omega, 2);
 		}
 	}
+}
 
-	div.prices-container {
-		@include span-columns(10, 10);
+div.itineraries-container {
+	$total-columns : 8;
+	$column-width  : 10%;
+	$gutter-width  : 0%;
+	$grid-padding  : 3%;
+	@include container;
+	div.itinerary-box.selected {
+		border-color : $adioso-orange-color;
+		border-width : 2px;
+		background-color : white;
+	}
+	div.itinerary-box {
+		@include border-radius(7px);
+		@include span-columns(8 omega, 8);
+		border-color : $dark-grey;
+		border-style : solid;
+		border-width : 1px;
+		margin       : 1% 0%;
+		padding      : 1%;
 		div.price-box {
-			@include border-radius(7px);
-			border-color : $dark-grey;
-			border-style : solid;
-			border-width : 1px;
-			margin       : 1% 0%;
-			padding      : 1%;
-
+			@include span-columns(2, 8);
+			color : $price-blue;
+			font : $big-font;
 		}
-		.selected {
-			background-color : white;
+		div.times-box {
+			@include span-columns(1, 8);
+		}
+		div.stops-box {
+			@include span-columns(1, 8);
+		}
+		div.duration-box {
+			@include span-columns(1, 8);
+		}
+		div.carriers-box {
+			@include span-columns(1, 8);
+		}
+		div.booking-box {
+			@include span-columns(2 omega, 8);
+			color : $adioso-orange-color;
 		}
 	}
 }
