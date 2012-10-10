@@ -184,11 +184,7 @@ div.itineraries-container {
 	$gutter-width  : 0%;
 	$grid-padding  : 3%;
 	@include container;
-	div.itinerary-box.selected {
-		border-color : $adioso-orange-color;
-		border-width : 2px;
-		background-color : white;
-	}
+
 	div.itinerary-box {
 		@include border-radius(7px);
 		@include span-columns(8 omega, 8);
@@ -218,6 +214,13 @@ div.itineraries-container {
 			@include span-columns(2 omega, 8);
 			color : $adioso-orange-color;
 		}
+	}
+	div.itinerary-box.hovering {
+	    background-color: #fbfbfb;
+	}
+	div.itinerary-box.selected {
+		border-color : $adioso-orange-color;
+		background-color : white;
 	}
 }
 

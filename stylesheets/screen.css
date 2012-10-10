@@ -519,13 +519,7 @@ div.itineraries-container:after {
   display: table;
   clear: both;
 }
-/* line 187, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box.selected {
-  border-color: #f57931;
-  border-width: 2px;
-  background-color: white;
-}
-/* line 192, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 div.itineraries-container div.itinerary-box {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -543,7 +537,7 @@ div.itineraries-container div.itinerary-box {
   margin: 1% 0%;
   padding: 1%;
 }
-/* line 200, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 div.itineraries-container div.itinerary-box div.price-box {
   width: 25%;
   float: left;
@@ -552,35 +546,35 @@ div.itineraries-container div.itinerary-box div.price-box {
   color: #3b84dd;
   font: 200 30px/40px "Helvetica Neue", sans-serif;
 }
-/* line 205, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 div.itineraries-container div.itinerary-box div.times-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 208, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 div.itineraries-container div.itinerary-box div.stops-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 211, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 div.itineraries-container div.itinerary-box div.duration-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 214, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 div.itineraries-container div.itinerary-box div.carriers-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 217, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 div.itineraries-container div.itinerary-box div.booking-box {
   width: 25%;
   float: right;
@@ -588,4 +582,13 @@ div.itineraries-container div.itinerary-box div.booking-box {
   #margin-left: 0%;
   display: inline;
   color: #f57931;
+}
+/* line 218, ../sass/screen.scss */
+div.itineraries-container div.itinerary-box.hovering {
+  background-color: #fbfbfb;
+}
+/* line 221, ../sass/screen.scss */
+div.itineraries-container div.itinerary-box.selected {
+  border-color: #f57931;
+  background-color: white;
 }
