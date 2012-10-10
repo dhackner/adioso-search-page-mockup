@@ -3,11 +3,11 @@ $(document).ready(function() {
 	$(function() {
     	var state = true;
     	$( "div.itinerary-box" ).click(function() {
-        	if ( state ) {
-				$("div.itinerary-box").removeClass( 'selected', 50);
+        	if (!$(this).hasClass('selected')) {
+				$("div.itinerary-box.selected").removeClass( 'selected', 50);
             	$(this).addClass('selected', 50);
         	} else {
-            	$(this).removeClass( 'selected', 50);
+            	$(this).switchClass('selected', 'hovering', 50);
         	}
         	state = !state;
     	});
