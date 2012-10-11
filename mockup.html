@@ -75,13 +75,37 @@
 
     <div class="itineraries-container">
       <div class="itinerary-box">
-        <div class="price-box">$277 USD</div>
-        <div class="times-box">12:00</div>
-        <div class="stops-box">2 Stops</div>
-        <div class="duration-box">36 Hours</div>
+        <div class="price-box">
+          <span>$277 USD</span>
+          <input type="button" value="Refresh"/>
+        </div>
+        <div class="times-box">
+          <table>
+            <tr class="outbound">
+              <td><img src="images/airplane-up.png" /></td>
+              <td><span class="time">12:00</span></td>
+              <td><span class="city">Melbourne</span></td>
+              <td><span class="code">MEL</span></td>
+            </tr>
+            <tr class="inbound">
+              <td><img src="images/airplane-down.png" /></td>
+              <td><span class="time">20:29</span></td>
+              <td><span class="city">Osaka</span></td>
+              <td><span class="code">KIK</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="stops-box"><img src="images/stops.png">2 Stops</div>
+        <div class="duration-box"><img src="images/stopwatch.png">36 Hours</div>
         <div class="carriers-box">Virgin Australia</div>
-        <div class="booking-box">Book One-Way</div>
+        <div class="booking-box">
+          <table>
+            <tr><td><a>Book One-Way</a></td></tr>
+            <tr><td><input type="checkbox"><span>Select and find return</span></input></td></tr>
+          </table>
+        </div>
       </div>
+<!--
       <div class="itinerary-box selected">
         <div class="price-box">$277 USD</div>
         <div class="times-box">12:00</div>
@@ -98,6 +122,7 @@
         <div class="carriers-box">Virgin Australia</div>
         <div class="booking-box">Book One-Way</div>
       </div>
+-->
     </div>
   </body>
 </html>

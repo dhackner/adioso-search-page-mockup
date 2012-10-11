@@ -14,6 +14,7 @@ $filters-container-background : #b6ffd0;
 $grey                         : #f4f4f4;
 $dark-grey                    : #e5e5e5;
 $darkest-grey                 : #7f7f7f;
+$blackish-grey                : #585858;
 $base-font                    : 500 16px/20px "Helvetica Neue", sans-serif;
 $big-font                     : 200 30px/40px "Helvetica Neue", sans-serif;
 
@@ -193,13 +194,34 @@ div.itineraries-container {
 		border-width : 1px;
 		margin       : 1% 0%;
 		padding      : 1%;
+		
+		div {
+
+		}
+		
 		div.price-box {
-			@include span-columns(2, 8);
-			color : $price-blue;
-			font : $big-font;
+			@include span-columns(1, 8);
+			span {
+				color : $price-blue;
+				font : $big-font;
+			}
 		}
 		div.times-box {
-			@include span-columns(1, 8);
+			@include span-columns(2, 8);
+			color : $darkest-grey;
+			tr.outbound {
+				border-bottom-style : solid;
+				border-bottom-width : 1px;
+				border-bottom-color : $dark-grey;	
+			}
+			td {
+				padding : 3%;
+			}
+			span.city {
+				color : $blackish-grey;
+			}
+			span.code {
+			}
 		}
 		div.stops-box {
 			@include span-columns(1, 8);
@@ -212,7 +234,10 @@ div.itineraries-container {
 		}
 		div.booking-box {
 			@include span-columns(2 omega, 8);
-			color : $adioso-orange-color;
+			a {
+				color : $adioso-orange-color;
+				font : $big-font;
+			}
 		}
 	}
 	div.itinerary-box.hovering {
