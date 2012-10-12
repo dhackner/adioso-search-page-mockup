@@ -179,14 +179,14 @@ div.boxes {
 	}
 }
 
-div.itineraries-container {
+.itineraries-container {
 	$total-columns : 8;
 	$column-width  : 10%;
 	$gutter-width  : 0%;
 	$grid-padding  : 3%;
 	@include container;
 
-	div.itinerary-box {
+	.itinerary-box {
 		@include border-radius(7px);
 		@include span-columns(8 omega, 8);
 		border-color : $dark-grey;
@@ -195,18 +195,14 @@ div.itineraries-container {
 		margin       : 1% 0%;
 		padding      : 1%;
 		
-		div {
-
-		}
-		
-		div.price-box {
+		.price-box {
 			@include span-columns(1, 8);
 			span {
 				color : $price-blue;
 				font : $big-font;
 			}
 		}
-		div.times-box {
+		.times-box {
 			@include span-columns(2, 8);
 			color : $darkest-grey;
 			tr.outbound {
@@ -223,16 +219,16 @@ div.itineraries-container {
 			span.code {
 			}
 		}
-		div.stops-box {
+		.stops-box {
 			@include span-columns(1, 8);
 		}
-		div.duration-box {
+		.duration-box {
 			@include span-columns(1, 8);
 		}
-		div.carriers-box {
+		.carriers-box {
 			@include span-columns(1, 8);
 		}
-		div.booking-box {
+		.booking-box {
 			@include span-columns(2 omega, 8);
 			a {
 				color : $adioso-orange-color;
@@ -240,10 +236,10 @@ div.itineraries-container {
 			}
 		}
 	}
-	div.itinerary-box.hovering {
+	.itinerary-box.hovering {
 	    background-color: #fbfbfb;
 	}
-	div.itinerary-box.selected {
+	.itinerary-box.selected {
 		border-color : $adioso-orange-color;
 		background-color : white;
 	}

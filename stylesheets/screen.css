@@ -504,7 +504,7 @@ div.boxes div span.suggestion {
 }
 
 /* line 182, ../sass/screen.scss */
-div.itineraries-container {
+.itineraries-container {
   *zoom: 1;
   max-width: 80%;
   _width: 80%;
@@ -514,13 +514,13 @@ div.itineraries-container {
   padding-right: 3%;
 }
 /* line 38, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-div.itineraries-container:after {
+.itineraries-container:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 189, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box {
+.itineraries-container .itinerary-box {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -537,80 +537,80 @@ div.itineraries-container div.itinerary-box {
   margin: 1% 0%;
   padding: 1%;
 }
-/* line 202, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.price-box {
+/* line 198, ../sass/screen.scss */
+.itineraries-container .itinerary-box .price-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 204, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.price-box span {
+/* line 200, ../sass/screen.scss */
+.itineraries-container .itinerary-box .price-box span {
   color: #3b84dd;
   font: 200 30px/40px "Helvetica Neue", sans-serif;
 }
-/* line 209, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.times-box {
+/* line 205, ../sass/screen.scss */
+.itineraries-container .itinerary-box .times-box {
   width: 25%;
   float: left;
   margin-right: 0%;
   display: inline;
   color: #7f7f7f;
 }
-/* line 212, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.times-box tr.outbound {
+/* line 208, ../sass/screen.scss */
+.itineraries-container .itinerary-box .times-box tr.outbound {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #e5e5e5;
 }
-/* line 217, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.times-box td {
+/* line 213, ../sass/screen.scss */
+.itineraries-container .itinerary-box .times-box td {
   padding: 3%;
 }
-/* line 220, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.times-box span.city {
+/* line 216, ../sass/screen.scss */
+.itineraries-container .itinerary-box .times-box span.city {
   color: #585858;
 }
-/* line 226, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.stops-box {
+/* line 222, ../sass/screen.scss */
+.itineraries-container .itinerary-box .stops-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 229, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.duration-box {
+/* line 225, ../sass/screen.scss */
+.itineraries-container .itinerary-box .duration-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 232, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.carriers-box {
+/* line 228, ../sass/screen.scss */
+.itineraries-container .itinerary-box .carriers-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 235, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.booking-box {
+/* line 231, ../sass/screen.scss */
+.itineraries-container .itinerary-box .booking-box {
   width: 25%;
   float: right;
   margin-right: 0;
   #margin-left: 0%;
   display: inline;
 }
-/* line 237, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box div.booking-box a {
+/* line 233, ../sass/screen.scss */
+.itineraries-container .itinerary-box .booking-box a {
   color: #f57931;
   font: 200 30px/40px "Helvetica Neue", sans-serif;
 }
-/* line 243, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box.hovering {
+/* line 239, ../sass/screen.scss */
+.itineraries-container .itinerary-box.hovering {
   background-color: #fbfbfb;
 }
-/* line 246, ../sass/screen.scss */
-div.itineraries-container div.itinerary-box.selected {
+/* line 242, ../sass/screen.scss */
+.itineraries-container .itinerary-box.selected {
   border-color: #f57931;
   background-color: white;
 }
