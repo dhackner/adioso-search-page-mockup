@@ -20,228 +20,215 @@ $big-font                     : 200 30px/40px "Helvetica Neue", sans-serif;
 
 
 span {
-	font: $base-font;
+  font: $base-font;
 }
 
 body {
-	background-color : $grey;
+  background-color : $grey;
 }
 
 div.boxes {
-	$total-columns : 10;
-	$column-width  : 10%;
-	$gutter-width  : 0%;
-	$grid-padding  : 3%;
-	@include container;
-	padding-bottom  : 1%;
-	background-color : white;
-	img {
-		@include span-columns(1, 10);
-		margin-bottom  : 2%;
-	}
-	ul {
-		@include span-columns(10, 10);
-		li {
-			@include span-columns(2, 10);
-			span {
-				color     : #7f7f7f;
-				font-size : 60%;
-				display: block;
-			}
-		}
-	}
-	ul {
-		@include span-columns(10, 10);
-		li {
-			@include span-columns(2, 10);
-			input {
-				@include border-radius(7px);
-				padding : 4% 23%;
-				display : block;
-			}
-			button.search-button {
-				margin-top : 2%;
-				@include sassy-button("glass", 5px, 13px, $adioso-orange-color);
-			}
-		}
-	}
+  $total-columns : 10;
+  $column-width  : 10%;
+  $gutter-width  : 0%;
+  $grid-padding  : 3%;
+  @include container;
+  padding-bottom  : 1%;
+  background-color : white;
+  img {
+    @include span-columns(1, 10);
+    margin-bottom  : 2%;
+  }
+  ul {
+    @include span-columns(10, 10);
+    li {
+      @include span-columns(2, 10);
+      span {
+        color     : #7f7f7f;
+        font-size : 60%;
+        display: block;
+      }
+    }
+  }
+  ul {
+    @include span-columns(10, 10);
+    li {
+      @include span-columns(2, 10);
+      input {
+        @include border-radius(7px);
+        padding : 4% 23%;
+        display : block;
+      }
+      button.search-button {
+        margin-top : 2%;
+        @include sassy-button("glass", 5px, 13px, $adioso-orange-color);
+      }
+    }
+  }
 
-	div {
-		@include span-columns(10, 10);
-		padding-top:1%;
-		padding-bottom:2%; 
-		span.question {
-			color : $dark-grey;
-		}
-		span.suggestion {
-			color : #5496ea;
-		}
-	}
+  div {
+    @include span-columns(10, 10);
+    padding-top:1%;
+    padding-bottom:2%; 
+    span.question {
+      color : $dark-grey;
+    }
+    span.suggestion {
+      color : #5496ea;
+    }
+  }
 }
 
 .main {
-	$total-columns : 10;
-	$column-width  : 10%;
-	$gutter-width  : 0%;
-	$grid-padding  : 3%;
-	@include container;
+  $total-columns : 10;
+  $column-width  : 10%;
+  $gutter-width  : 0%;
+  $grid-padding  : 3%;
+  @include container;
     
-	border-top-style : solid;
-	border-top-width : 1px;
-	border-top-color : $dark-grey;
+  border-top-style : solid;
+  border-top-width : 1px;
+  border-top-color : $dark-grey;
 
-	div.header {
-		div {
-			padding-top   : 1%;
-			span.description {
-				@include span-columns(5, 10);
-				font: $big-font;
-			}
-			button.watch-button {
-				@include prefix(4); @include span-columns(1 omega,10);
-				@include sassy-button("glass", 5px, 13px, #829fb2);
-			}
-		}
-		div {
-			@include span-columns(10 omega, 10);
-			padding-bottom   : 1%;
-			div.breadcrumbs {
-				padding-top : 2%;
-				color : $adioso-orange-color;
-				@include span-columns(3, 10); @include suffix(2);
-				span:first-child:before {
-					content : "";
-				}
-				span:before {
-					color   : black;
-					content : " > ";
-				}
-			}
-			div.social-buttons {
-				@include prefix(2); @include span-columns(3 omega, 10);
-				img {
-					width : 100%;
-				}
-			}
-		}
-		div.filters-container {
-			@include span-columns(10 omega, 10, 3%);
-			@include border-radius(7px);
-			padding-top      : 2%;
-			padding-bottom   : 2%;
-			background-color : $filters-container-background;
-			font             : $big-font;
-			color            : #50735C;
-		}
-	}
+  div.header {
+    div {
+      padding-top   : 1%;
+      span.description {
+        @include span-columns(5, 10);
+        font: $big-font;
+      }
+      button.watch-button {
+        @include prefix(4); @include span-columns(1 omega,10);
+        @include sassy-button("glass", 5px, 13px, #829fb2);
+      }
+    }
+    div {
+      @include span-columns(10 omega, 10);
+      padding-bottom   : 1%;
+      div.breadcrumbs {
+        padding-top : 2%;
+        color : $adioso-orange-color;
+        @include span-columns(3, 10); @include suffix(2);
+        span:first-child:before {
+          content : "";
+        }
+        span:before {
+          color   : black;
+          content : " > ";
+        }
+      }
+      div.social-buttons {
+        @include prefix(2); @include span-columns(3 omega, 10);
+        img {
+          width : 100%;
+        }
+      }
+    }
+    div.filters-container {
+      @include span-columns(10 omega, 10, 3%);
+      @include border-radius(7px);
+      padding-top      : 2%;
+      padding-bottom   : 2%;
+      background-color : $filters-container-background;
+      font             : $big-font;
+      color            : #50735C;
+    }
+  }
 
-	div.graph-container {
-		@include span-columns(10 omega, 10);
-		margin-top    : 3%;
-		margin-bottom : 3%;
-		span {
-		}
-		img {
-			width : 100%;
-		}
-	}
+  div.graph-container {
+    @include span-columns(10 omega, 10);
+    margin-top    : 3%;
+    margin-bottom : 3%;
+    span {
+    }
+    img {
+      width : 100%;
+    }
+  }
 
-	div.active-filter-wrapper {
-		span {
-		}
-		div.filters-list {
-			@include span-columns(10 omega, 10, 1%);
-			@include border-radius(7px);
-			margin-top       : 1%;
-			padding-top      : .5%;
-			padding-bottom   : .5%;
-			background-color : $dark-grey;
-			button {
-				@include sassy-button("glass", 5px, 11px, #4b4b4b, #4b4b4b, #b0b0b0);
-			}
-		}
-	}
+  div.active-filter-wrapper {
+    span {
+    }
+    div.filters-list {
+      @include span-columns(10 omega, 10, 1%);
+      @include border-radius(7px);
+      margin-top       : 1%;
+      padding-top      : .5%;
+      padding-bottom   : .5%;
+      background-color : $dark-grey;
+      button {
+        @include sassy-button("glass", 5px, 11px, #4b4b4b, #4b4b4b, #b0b0b0);
+      }
+    }
+  }
 
-	div.today {
-		@include span-columns(2, 10); @include suffix(8, 10);
-		@include border-right-radius(7px);
-		background-color : $dark-grey;
-		color            : $darkest-grey;
-		margin-top       : 5%;
-		margin-bottom    : 1%;
-		margin-left      : -3%;
-		padding-top      : 1%;
-		padding-right    : 2%;
-		padding-bottom   : 1%;
-		span {
-			@include prefix(1, 2); @include span-columns(1 omega, 2);
-		}
-	}
+  div.today {
+    @include span-columns(2, 10); @include suffix(8, 10);
+    @include border-right-radius(7px);
+    background-color : $dark-grey;
+    color            : $darkest-grey;
+    margin-top       : 5%;
+    margin-bottom    : 1%;
+    margin-left      : -3%;
+    padding-top      : 1%;
+    padding-right    : 2%;
+    padding-bottom   : 1%;
+    span {
+      @include prefix(1, 2); @include span-columns(1 omega, 2);
+    }
+  }
+
+  .itineraries-container {
+
+    .itinerary-box {
+      @include border-radius(7px);
+      border-color : $dark-grey;
+      border-style : solid;
+      border-width : 1px;
+      margin       : 1% 0%;
+      padding      : 1%;
+
+      .price-box {
+        span {
+          color : $price-blue;
+          font : $big-font;
+        }
+      }
+      .times-box {
+        color : $darkest-grey;
+        tr.outbound {
+          border-bottom-style : solid;
+          border-bottom-width : 1px;
+          border-bottom-color : $dark-grey;  
+        }
+        td {
+          padding : 3%;
+        }
+        span.city {
+          color : $blackish-grey;
+        }
+        span.code {
+        }
+      }
+      .stops-box {
+      }
+      .duration-box {
+      }
+      .carriers-box {
+      }
+      .booking-box {
+        a {
+          color : $adioso-orange-color;
+          font : $big-font;
+        }
+      }
+    }
+    .itinerary-box.hovering {
+        background-color: #fbfbfb;
+    }
+    .itinerary-box.selected {
+      border-color : $adioso-orange-color;
+      background-color : white;
+    }
+  }
 }
-
-.itineraries-container {
-	$total-columns : 8;
-	$column-width  : 10%;
-	$gutter-width  : 0%;
-	$grid-padding  : 3%;
-	@include container;
-
-	.itinerary-box {
-		@include border-radius(7px);
-		@include span-columns(8 omega, 8);
-		border-color : $dark-grey;
-		border-style : solid;
-		border-width : 1px;
-		margin       : 1% 0%;
-		padding      : 1%;
-		
-		.price-box {
-			@include span-columns(1, 8);
-			span {
-				color : $price-blue;
-				font : $big-font;
-			}
-		}
-		.times-box {
-			@include span-columns(2, 8);
-			color : $darkest-grey;
-			tr.outbound {
-				border-bottom-style : solid;
-				border-bottom-width : 1px;
-				border-bottom-color : $dark-grey;	
-			}
-			td {
-				padding : 3%;
-			}
-			span.city {
-				color : $blackish-grey;
-			}
-			span.code {
-			}
-		}
-		.stops-box {
-			@include span-columns(1, 8);
-		}
-		.duration-box {
-			@include span-columns(1, 8);
-		}
-		.carriers-box {
-			@include span-columns(1, 8);
-		}
-		.booking-box {
-			@include span-columns(2 omega, 8);
-			a {
-				color : $adioso-orange-color;
-				font : $big-font;
-			}
-		}
-	}
-	.itinerary-box.hovering {
-	    background-color: #fbfbfb;
-	}
-	.itinerary-box.selected {
-		border-color : $adioso-orange-color;
-		background-color : white;
-	}
-}
-

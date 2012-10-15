@@ -1,3 +1,4 @@
+Procfile.dev
 *.swp
 .sass-cache/
 .bundle/
