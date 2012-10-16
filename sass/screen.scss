@@ -50,7 +50,7 @@ body {
   }
 
   .labels {
-    li {
+    div {
       @include span-columns(3, $total-columns);
       @include nth-omega(last);
       span {

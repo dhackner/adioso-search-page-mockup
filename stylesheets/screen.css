@@ -121,21 +121,21 @@ body * {
   margin-right: 91.66667%;
 }
 /* line 53, ../sass/screen.scss */
-.boxes .labels li {
+.boxes .labels div {
   width: 25%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
 /* line 172, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/susy-1.0.1/sass/susy/_grid.scss */
-.boxes .labels li:last-child {
+.boxes .labels div:last-child {
   float: right;
   margin-right: 0;
   #margin-left: 0%;
   display: inline;
 }
 /* line 56, ../sass/screen.scss */
-.boxes .labels li span {
+.boxes .labels div span {
   color: #7f7f7f;
   font-size: 60%;
 }
