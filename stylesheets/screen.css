@@ -72,84 +72,104 @@ span {
   font: 500 16px/20px "Helvetica Neue", sans-serif;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 body {
-  background-color: #f4f4f4;
-}
-
-/* line 30, ../sass/screen.scss */
-div.boxes {
   *zoom: 1;
-  max-width: 100%;
-  _width: 100%;
+  max-width: 100.0%;
+  _width: 100.0%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 1%;
-  background-color: white;
+  padding-left: 0%;
+  padding-right: 0%;
+  background-color: #f4f4f4;
 }
 /* line 38, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-div.boxes:after {
+body:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 38, ../sass/screen.scss */
-div.boxes img {
-  width: 10%;
-  float: left;
-  margin-right: 0%;
-  display: inline;
-  margin-bottom: 2%;
+/* line 14, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/susy-1.0.1/sass/susy/_grid.scss */
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 42, ../sass/screen.scss */
-div.boxes ul {
+
+/* line 38, ../sass/screen.scss */
+.boxes {
+  padding-left: 5.0%;
+  padding-right: 5.0%;
   width: 100%;
-  float: left;
-  margin-right: 0%;
+  float: right;
+  margin-right: 0;
+  #margin-left: 0%;
   display: inline;
+  background-color: white;
+  padding-bottom: 2%;
 }
 /* line 44, ../sass/screen.scss */
-div.boxes ul li {
-  width: 20%;
-  float: left;
-  margin-right: 0%;
-  display: inline;
+.boxes .image {
+  padding-bottom: 3%;
 }
 /* line 46, ../sass/screen.scss */
-div.boxes ul li span {
-  color: #7f7f7f;
-  font-size: 60%;
-  display: block;
+.boxes .image img {
+  width: 8.33333%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
+  margin-right: 91.66667%;
 }
 /* line 53, ../sass/screen.scss */
-div.boxes ul {
-  width: 100%;
+.boxes .labels li {
+  width: 25%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 55, ../sass/screen.scss */
-div.boxes ul li {
-  width: 20%;
+/* line 172, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/susy-1.0.1/sass/susy/_grid.scss */
+.boxes .labels li:last-child {
+  float: right;
+  margin-right: 0;
+  #margin-left: 0%;
+  display: inline;
+}
+/* line 56, ../sass/screen.scss */
+.boxes .labels li span {
+  color: #7f7f7f;
+  font-size: 60%;
+}
+/* line 63, ../sass/screen.scss */
+.boxes .inputs {
+  padding-bottom: 6%;
+}
+/* line 65, ../sass/screen.scss */
+.boxes .inputs div {
+  width: 25%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 57, ../sass/screen.scss */
-div.boxes ul li input {
+/* line 172, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/susy-1.0.1/sass/susy/_grid.scss */
+.boxes .inputs div:last-child {
+  float: right;
+  margin-right: 0;
+  #margin-left: 0%;
+  display: inline;
+}
+/* line 68, ../sass/screen.scss */
+.boxes .inputs div input {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px;
-  padding: 4% 23%;
-  display: block;
+  font: 500 16px/20px "Helvetica Neue", sans-serif;
+  padding: 3%;
+  width: 85%;
 }
-/* line 62, ../sass/screen.scss */
-div.boxes ul li button.search-button {
-  margin-top: 2%;
+/* line 74, ../sass/screen.scss */
+.boxes .inputs div button.search-button {
   font-size: 13px;
   padding: 0.5em 1.5em;
   display: inline-block;
@@ -174,11 +194,11 @@ div.boxes ul li button.search-button {
   text-shadow: #c24d09 0 -1px 0;
 }
 /* line 15, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-div.boxes ul li button.search-button:hover {
+.boxes .inputs div button.search-button:hover {
   text-decoration: none;
 }
 /* line 30, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-div.boxes ul li button.search-button:hover {
+.boxes .inputs div button.search-button:hover {
   background-color: #f3630f;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f57c36), color-stop(51%, #f3630f));
   background: -webkit-linear-gradient(#f57c36 50%, #f3630f 51%);
@@ -187,13 +207,13 @@ div.boxes ul li button.search-button:hover {
   background: linear-gradient(#f57c36 50%, #f3630f 51%);
 }
 /* line 33, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-div.boxes ul li button.search-button:active {
+.boxes .inputs div button.search-button:active {
   -webkit-box-shadow: #f1600c 0 1px 2px inset;
   -moz-box-shadow: #f1600c 0 1px 2px inset;
   box-shadow: #f1600c 0 1px 2px inset;
 }
 /* line 6, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-div.boxes ul li button.search-button.disabled, div.boxes ul li button.search-button[disabled] {
+.boxes .inputs div button.search-button.disabled, .boxes .inputs div button.search-button[disabled] {
   opacity: 0.6;
   background: #f57931;
   cursor: default;
@@ -202,68 +222,60 @@ div.boxes ul li button.search-button.disabled, div.boxes ul li button.search-but
   box-shadow: none;
 }
 /* line 73, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/_sassy-buttons.sass */
-div.boxes ul li button.search-button::-moz-focus-inner {
+.boxes .inputs div button.search-button::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 69, ../sass/screen.scss */
-div.boxes div {
-  width: 100%;
-  float: left;
-  margin-right: 0%;
-  display: inline;
-  padding-top: 1%;
-  padding-bottom: 2%;
-}
-/* line 73, ../sass/screen.scss */
-div.boxes div span.question {
+/* line 80, ../sass/screen.scss */
+.boxes .question {
   color: #e5e5e5;
 }
-/* line 76, ../sass/screen.scss */
-div.boxes div span.suggestion {
+/* line 82, ../sass/screen.scss */
+.boxes .question span.suggestion {
   color: #5496ea;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .main {
-  *zoom: 1;
-  max-width: 100%;
-  _width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: #e5e5e5;
+  padding-left: 5.0%;
+  padding-right: 5.0%;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  #margin-left: 0%;
+  display: inline;
 }
-/* line 38, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.main:after {
-  content: "";
-  display: table;
-  clear: both;
+/* line 95, ../sass/screen.scss */
+.main div.header {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  #margin-left: 0%;
+  display: inline;
 }
-/* line 94, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .main div.header div {
   padding-top: 1%;
 }
-/* line 96, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .main div.header div span.description {
-  width: 50%;
+  width: 91.66667%;
   float: left;
   margin-right: 0%;
   display: inline;
   font: 200 30px/40px "Helvetica Neue", sans-serif;
 }
-/* line 100, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .main div.header div button.watch-button {
-  padding-left: 40%;
-  width: 10%;
+  width: 8.33333%;
   float: right;
   margin-right: 0;
   #margin-left: 0%;
   display: inline;
-  font-size: 13px;
+  font-size: 10px;
   padding: 0.5em 1.5em;
   display: inline-block;
   cursor: pointer;
@@ -319,52 +331,45 @@ div.boxes div span.suggestion {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 105, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .main div.header div {
-  width: 100%;
-  float: right;
-  margin-right: 0;
-  #margin-left: 0%;
-  display: inline;
   padding-bottom: 1%;
 }
-/* line 108, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .main div.header div div.breadcrumbs {
-  padding-top: 2%;
-  color: #f57931;
-  width: 30%;
+  width: 66.66667%;
   float: left;
   margin-right: 0%;
   display: inline;
-  padding-right: 20%;
+  padding-top: 2%;
+  color: #f57931;
 }
-/* line 112, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .main div.header div div.breadcrumbs span:first-child:before {
   content: "";
 }
-/* line 115, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .main div.header div div.breadcrumbs span:before {
   color: black;
   content: " > ";
 }
-/* line 120, ../sass/screen.scss */
-.main div.header div div.social-buttons {
-  padding-left: 20%;
-  width: 30%;
+/* line 128, ../sass/screen.scss */
+.main div.header div .social-buttons {
+  width: 33.33333%;
   float: right;
   margin-right: 0;
   #margin-left: 0%;
   display: inline;
 }
-/* line 122, ../sass/screen.scss */
-.main div.header div div.social-buttons img {
+/* line 130, ../sass/screen.scss */
+.main div.header div .social-buttons img {
   width: 100%;
 }
-/* line 127, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .main div.header div.filters-container {
-  padding-left: 3%;
-  padding-right: 3%;
-  width: 94%;
+  padding-left: 3.0%;
+  padding-right: 3.0%;
+  width: 100%;
   float: right;
   margin-right: 0;
   #margin-left: 0%;
@@ -380,7 +385,7 @@ div.boxes div span.suggestion {
   font: 200 30px/40px "Helvetica Neue", sans-serif;
   color: #50735C;
 }
-/* line 138, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .main div.graph-container {
   width: 100%;
   float: right;
@@ -390,15 +395,15 @@ div.boxes div span.suggestion {
   margin-top: 3%;
   margin-bottom: 3%;
 }
-/* line 144, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .main div.graph-container img {
   width: 100%;
 }
-/* line 152, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .main div.active-filter-wrapper div.filters-list {
-  padding-left: 1%;
-  padding-right: 1%;
-  width: 98%;
+  padding-left: 1.0%;
+  padding-right: 1.0%;
+  width: 100%;
   float: right;
   margin-right: 0;
   #margin-left: 0%;
@@ -413,7 +418,7 @@ div.boxes div span.suggestion {
   padding-bottom: .5%;
   background-color: #e5e5e5;
 }
-/* line 159, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .main div.active-filter-wrapper div.filters-list button {
   font-size: 11px;
   padding: 0.5em 1.5em;
@@ -471,13 +476,13 @@ div.boxes div span.suggestion {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 165, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .main div.today {
-  width: 20%;
+  width: 25%;
   float: left;
   margin-right: 0%;
   display: inline;
-  padding-right: 80%;
+  padding-right: 75.0%;
   -moz-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
   border-top-right-radius: 7px;
@@ -488,22 +493,37 @@ div.boxes div span.suggestion {
   color: #7f7f7f;
   margin-top: 5%;
   margin-bottom: 1%;
-  margin-left: -3%;
+  margin-left: -5%;
   padding-top: 1%;
   padding-right: 2%;
   padding-bottom: 1%;
 }
-/* line 176, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .main div.today span {
-  padding-left: 50%;
-  width: 50%;
+  margin-left: -5%;
+  width: 66.66667%;
   float: right;
   margin-right: 0;
   #margin-left: 0%;
   display: inline;
 }
-/* line 183, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
+.main .itineraries-container {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  #margin-left: 0%;
+  display: inline;
+}
+/* line 190, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box {
+  padding-left: 1.0%;
+  padding-right: 1.0%;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  #margin-left: 0%;
+  display: inline;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -512,42 +532,79 @@ div.boxes div span.suggestion {
   border-color: #e5e5e5;
   border-style: solid;
   border-width: 1px;
-  margin: 1% 0%;
-  padding: 1%;
 }
-/* line 192, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .price-box {
+  width: 16.66667%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
+}
+/* line 199, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .price-box span {
   color: #3b84dd;
   font: 200 30px/40px "Helvetica Neue", sans-serif;
 }
-/* line 197, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box {
+  width: 25%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
   color: #7f7f7f;
 }
-/* line 199, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box tr.outbound {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #e5e5e5;
 }
-/* line 204, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box td {
   padding: 3%;
 }
-/* line 207, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box span.city {
   color: #585858;
 }
-/* line 220, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .stops-box {
+  width: 8.33333%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
+}
+/* line 224, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .duration-box {
+  width: 8.33333%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
+}
+/* line 227, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .carriers-box {
+  width: 8.33333%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
+}
+/* line 230, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .booking-box {
+  width: 16.66667%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
+}
+/* line 232, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .booking-box a {
   color: #f57931;
   font: 200 30px/40px "Helvetica Neue", sans-serif;
 }
-/* line 226, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box.hovering {
   background-color: #fbfbfb;
 }
-/* line 229, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box.selected {
   border-color: #f57931;
   background-color: white;

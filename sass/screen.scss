@@ -23,56 +23,62 @@ span {
   font: $base-font;
 }
 
+$grid-border : 5%;
+
 body {
+  $total-columns : 12;
+  $column-width : 8.333333333%;
+  $gutter-width:0%;
+  $grid-padding : 0%;
+  @include container;
+  @include border-box-sizing;
   background-color : $grey;
 }
 
-div.boxes {
-  $total-columns : 10;
-  $column-width  : 10%;
-  $gutter-width  : 0%;
-  $grid-padding  : 3%;
-  @include container;
-  padding-bottom  : 1%;
+.boxes {
+  @include span-columns($total-columns omega, $total-columns, $grid-border);
   background-color : white;
-  img {
-    @include span-columns(1, 10);
-    margin-bottom  : 2%;
+  padding-bottom : 2%;
+
+
+  .image {
+    padding-bottom : 3%;
+    img {
+      @include span-columns(1);
+      @include post($total-columns - 1);
+    }
   }
-  ul {
-    @include span-columns(10, 10);
+
+  .labels {
     li {
-      @include span-columns(2, 10);
+      @include span-columns(3, $total-columns);
+      @include nth-omega(last);
       span {
         color     : #7f7f7f;
         font-size : 60%;
-        display: block;
       }
     }
   }
-  ul {
-    @include span-columns(10, 10);
-    li {
-      @include span-columns(2, 10);
+
+  .inputs {
+    padding-bottom : 6%;
+    div {
+      @include span-columns(3, $total-columns);
+      @include nth-omega(last);
       input {
         @include border-radius(7px);
-        padding : 4% 23%;
-        display : block;
+        font    : $base-font;
+        padding : 3%;
+        width   : 85%;
       }
       button.search-button {
-        margin-top : 2%;
         @include sassy-button("glass", 5px, 13px, $adioso-orange-color);
       }
     }
   }
 
-  div {
-    @include span-columns(10, 10);
-    padding-top:1%;
-    padding-bottom:2%; 
-    span.question {
-      color : $dark-grey;
-    }
+  .question {
+    color : $dark-grey;
     span.suggestion {
       color : #5496ea;
     }
@@ -80,35 +86,37 @@ div.boxes {
 }
 
 .main {
-  $total-columns : 10;
-  $column-width  : 10%;
-  $gutter-width  : 0%;
-  $grid-padding  : 3%;
-  @include container;
-    
+  //  @include susy-grid-background;
   border-top-style : solid;
   border-top-width : 1px;
   border-top-color : $dark-grey;
+  @include span-columns($total-columns omega, $total-columns, $grid-border);
 
   div.header {
+    @include span-columns($total-columns omega);
     div {
-      padding-top   : 1%;
+      $button-columns      : 1;
+      $description-columns : $total-columns - $button-columns;
+
+      padding-top          : 1%;
       span.description {
-        @include span-columns(5, 10);
+        @include span-columns($description-columns);
         font: $big-font;
       }
       button.watch-button {
-        @include prefix(4); @include span-columns(1 omega,10);
-        @include sassy-button("glass", 5px, 13px, #829fb2);
+        @include span-columns($button-columns omega);
+        @include sassy-button("glass", 5px, 10px, #829fb2);
       }
     }
     div {
-      @include span-columns(10 omega, 10);
+      $breadcrumb-columns : 8;
+      $social-columns     : $total-columns - $breadcrumb-columns;
+
       padding-bottom   : 1%;
       div.breadcrumbs {
+        @include span-columns($breadcrumb-columns);
         padding-top : 2%;
         color : $adioso-orange-color;
-        @include span-columns(3, 10); @include suffix(2);
         span:first-child:before {
           content : "";
         }
@@ -117,15 +125,15 @@ div.boxes {
           content : " > ";
         }
       }
-      div.social-buttons {
-        @include prefix(2); @include span-columns(3 omega, 10);
+      .social-buttons {
+        @include span-columns($social-columns omega);
         img {
           width : 100%;
         }
       }
     }
     div.filters-container {
-      @include span-columns(10 omega, 10, 3%);
+      @include span-columns($total-columns omega, $total-columns, 3%);
       @include border-radius(7px);
       padding-top      : 2%;
       padding-bottom   : 2%;
@@ -136,21 +144,17 @@ div.boxes {
   }
 
   div.graph-container {
-    @include span-columns(10 omega, 10);
+    @include span-columns($total-columns omega);
     margin-top    : 3%;
     margin-bottom : 3%;
-    span {
-    }
     img {
       width : 100%;
     }
   }
 
   div.active-filter-wrapper {
-    span {
-    }
     div.filters-list {
-      @include span-columns(10 omega, 10, 1%);
+      @include span-columns($total-columns omega, $total-columns, 1%);
       @include border-radius(7px);
       margin-top       : 1%;
       padding-top      : .5%;
@@ -163,38 +167,42 @@ div.boxes {
   }
 
   div.today {
-    @include span-columns(2, 10); @include suffix(8, 10);
+    $today-columns : 3;
+    @include span-columns($today-columns, $total-columns); @include suffix($total-columns - $today-columns);
     @include border-right-radius(7px);
     background-color : $dark-grey;
     color            : $darkest-grey;
     margin-top       : 5%;
     margin-bottom    : 1%;
-    margin-left      : -3%;
+    margin-left      : -$grid-border;
     padding-top      : 1%;
     padding-right    : 2%;
     padding-bottom   : 1%;
     span {
-      @include prefix(1, 2); @include span-columns(1 omega, 2);
+      margin-left      : -$grid-border;
+      @include span-columns(2 omega, $today-columns);
     }
   }
 
   .itineraries-container {
+    @include span-columns($total-columns omega);
 
     .itinerary-box {
+      @include span-columns($total-columns omega, $total-columns, 1%);
       @include border-radius(7px);
       border-color : $dark-grey;
       border-style : solid;
       border-width : 1px;
-      margin       : 1% 0%;
-      padding      : 1%;
 
       .price-box {
+        @include span-columns(2, $total-columns );
         span {
           color : $price-blue;
           font : $big-font;
         }
       }
       .times-box {
+        @include span-columns(3, $total-columns);
         color : $darkest-grey;
         tr.outbound {
           border-bottom-style : solid;
@@ -211,12 +219,16 @@ div.boxes {
         }
       }
       .stops-box {
+        @include span-columns(1, $total-columns);
       }
       .duration-box {
+        @include span-columns(1, $total-columns);
       }
       .carriers-box {
+        @include span-columns(1, $total-columns);
       }
       .booking-box {
+        @include span-columns(2, $total-columns);
         a {
           color : $adioso-orange-color;
           font : $big-font;
@@ -224,7 +236,7 @@ div.boxes {
       }
     }
     .itinerary-box.hovering {
-        background-color: #fbfbfb;
+      background-color: #fbfbfb;
     }
     .itinerary-box.selected {
       border-color : $adioso-orange-color;
