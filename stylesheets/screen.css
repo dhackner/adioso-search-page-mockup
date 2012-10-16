@@ -98,8 +98,8 @@ body * {
 
 /* line 38, ../sass/screen.scss */
 .boxes {
-  padding-left: 5.0%;
-  padding-right: 5.0%;
+  padding-left: 10.0%;
+  padding-right: 10.0%;
   width: 100%;
   float: right;
   margin-right: 0;
@@ -108,11 +108,11 @@ body * {
   background-color: white;
   padding-bottom: 2%;
 }
-/* line 44, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .boxes .image {
   padding-bottom: 3%;
 }
-/* line 46, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .boxes .image img {
   width: 8.33333%;
   float: left;
@@ -120,7 +120,7 @@ body * {
   display: inline;
   margin-right: 91.66667%;
 }
-/* line 53, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .boxes .labels li {
   width: 25%;
   float: left;
@@ -134,16 +134,16 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 56, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .boxes .labels li span {
   color: #7f7f7f;
   font-size: 60%;
 }
-/* line 63, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .boxes .inputs {
   padding-bottom: 6%;
 }
-/* line 65, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .boxes .inputs div {
   width: 25%;
   float: left;
@@ -157,7 +157,7 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 68, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .boxes .inputs div input {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -168,7 +168,7 @@ body * {
   padding: 3%;
   width: 85%;
 }
-/* line 74, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .boxes .inputs div button.search-button {
   font-size: 13px;
   padding: 0.5em 1.5em;
@@ -226,27 +226,28 @@ body * {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 80, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .boxes .question {
   color: #e5e5e5;
 }
-/* line 82, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .boxes .question span.suggestion {
   color: #5496ea;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .main {
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #e5e5e5;
-  padding-left: 5.0%;
-  padding-right: 5.0%;
+  padding-left: 10.0%;
+  padding-right: 10.0%;
   width: 100%;
   float: right;
   margin-right: 0;
   #margin-left: 0%;
   display: inline;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #e5e5e5;
+  padding-top: 1%;
 }
 /* line 95, ../sass/screen.scss */
 .main div.header {
@@ -478,11 +479,12 @@ body * {
 }
 /* line 169, ../sass/screen.scss */
 .main div.today {
-  width: 25%;
+  width: 33.33333%;
   float: left;
   margin-right: 0%;
   display: inline;
-  padding-right: 75.0%;
+  margin-right: 66.66667%;
+  margin-left: -16.66667%;
   -moz-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
   border-top-right-radius: 7px;
@@ -491,23 +493,20 @@ body * {
   border-bottom-right-radius: 7px;
   background-color: #e5e5e5;
   color: #7f7f7f;
-  margin-top: 5%;
-  margin-bottom: 1%;
-  margin-left: -5%;
+  margin-top: 7%;
+  margin-bottom: 2%;
   padding-top: 1%;
-  padding-right: 2%;
   padding-bottom: 1%;
 }
-/* line 181, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .main div.today span {
-  margin-left: -5%;
-  width: 66.66667%;
+  width: 50%;
   float: right;
   margin-right: 0;
   #margin-left: 0%;
   display: inline;
 }
-/* line 187, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .main .itineraries-container {
   width: 100%;
   float: right;
@@ -515,7 +514,7 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 190, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box {
   padding-left: 1.0%;
   padding-right: 1.0%;
@@ -532,6 +531,8 @@ body * {
   border-color: #e5e5e5;
   border-style: solid;
   border-width: 1px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 /* line 197, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .price-box {

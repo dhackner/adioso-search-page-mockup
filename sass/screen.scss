@@ -23,7 +23,7 @@ span {
   font: $base-font;
 }
 
-$grid-border : 5%;
+$grid-border : 10%;
 
 body {
   $total-columns : 12;
@@ -39,7 +39,6 @@ body {
   @include span-columns($total-columns omega, $total-columns, $grid-border);
   background-color : white;
   padding-bottom : 2%;
-
 
   .image {
     padding-bottom : 3%;
@@ -87,10 +86,11 @@ body {
 
 .main {
   //  @include susy-grid-background;
+  @include span-columns($total-columns omega, $total-columns, $grid-border);
   border-top-style : solid;
   border-top-width : 1px;
   border-top-color : $dark-grey;
-  @include span-columns($total-columns omega, $total-columns, $grid-border);
+  padding-top      : 1%;
 
   div.header {
     @include span-columns($total-columns omega);
@@ -167,19 +167,17 @@ body {
   }
 
   div.today {
-    $today-columns : 3;
-    @include span-columns($today-columns, $total-columns); @include suffix($total-columns - $today-columns);
+    $today-columns : 4;
+    @include span-columns($today-columns, $total-columns); @include post($total-columns - $today-columns);
+    @include pull(2);
     @include border-right-radius(7px);
     background-color : $dark-grey;
     color            : $darkest-grey;
-    margin-top       : 5%;
-    margin-bottom    : 1%;
-    margin-left      : -$grid-border;
+    margin-top       : 7%;
+    margin-bottom    : 2%;
     padding-top      : 1%;
-    padding-right    : 2%;
     padding-bottom   : 1%;
     span {
-      margin-left      : -$grid-border;
       @include span-columns(2 omega, $today-columns);
     }
   }
@@ -190,9 +188,11 @@ body {
     .itinerary-box {
       @include span-columns($total-columns omega, $total-columns, 1%);
       @include border-radius(7px);
-      border-color : $dark-grey;
-      border-style : solid;
-      border-width : 1px;
+      border-color  : $dark-grey;
+      border-style  : solid;
+      border-width  : 1px;
+      margin-top    : 1%;
+      margin-bottom : 1%;
 
       .price-box {
         @include span-columns(2, $total-columns );
