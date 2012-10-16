@@ -16,6 +16,7 @@ $dark-grey                    : #e5e5e5;
 $darkest-grey                 : #7f7f7f;
 $blackish-grey                : #585858;
 $base-font                    : 500 16px/20px "Helvetica Neue", sans-serif;
+$medium-font                  : 200 23px/30px "Helvetica Neue", sans-serif;
 $big-font                     : 200 30px/40px "Helvetica Neue", sans-serif;
 
 
@@ -192,7 +193,7 @@ body {
       border-style  : solid;
       border-width  : 1px;
       margin-top    : 1%;
-      margin-bottom : 1%;
+      margin-bottom : 2%;
 
       .price-box {
         @include span-columns(2, $total-columns );
@@ -225,13 +226,16 @@ body {
         @include span-columns(1, $total-columns);
       }
       .carriers-box {
-        @include span-columns(1, $total-columns);
+        @include span-columns(2, $total-columns);
       }
       .booking-box {
-        @include span-columns(2, $total-columns);
-        a {
-          color : $adioso-orange-color;
-          font : $big-font;
+        @include span-columns(3, $total-columns);
+        table {
+          width : 100%;
+          a {
+            color : $adioso-orange-color;
+            font : $medium-font;
+          }
         }
       }
     }
