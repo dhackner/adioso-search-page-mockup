@@ -195,10 +195,12 @@ body {
       border-width  : 1px;
       margin-top    : 1%;
       margin-bottom : 2%;
+      padding-top : 1%;
+      padding-bottom : 1%;
 
       .price-box {
-        @include span-columns(2, $itinerary-box-columns);
-        margin-top : 3%;
+        @include span-columns(1.5, $itinerary-box-columns);
+        margin-top : 1%;
         .price {
           color : $price-blue;
           font  : $big-font;
@@ -209,15 +211,35 @@ body {
         }
       }
       .times-box {
-        @include span-columns(3, $itinerary-box-columns);
+        $times-columns : 3.5;
+        @include span-columns($times-columns, $itinerary-box-columns, 1%);
+
         color : $darkest-grey;
-        tr.outbound {
+        .outbound {
+          @include span-columns(3, 3);
           border-bottom-style : solid;
           border-bottom-width : 1px;
-          border-bottom-color : $dark-grey;  
+          border-bottom-color : $dark-grey;
         }
-        td {
-          padding : 3%;
+        .inbound {
+          @include span-columns(3, 3);
+        }
+        .imgcell {
+          @include span-columns(.5, 3);
+        }
+        .timecell {
+          @include span-columns(.5, 3);
+            padding-top : 5%;
+            padding-right : 1%;
+        }
+        .citycell {
+          @include span-columns(1.5, 3);
+            padding-top : 5%;
+        }
+        .codecell {
+          @include span-columns(.5, 3);
+          @include omega;
+            padding-top : 5%;
         }
         span.city {
           color : $blackish-grey;
@@ -227,19 +249,19 @@ body {
       }
       .stops-box {
         @include span-columns(1.5, $itinerary-box-columns);
-        margin-top : 3.5%;
+        margin-top : 2.5%;
       }
       .duration-box {
         @include span-columns(1.5, $itinerary-box-columns);
-        margin-top : 3.5%;
+        margin-top : 2.5%;
       }
       .carriers-box {
         @include span-columns(1, $itinerary-box-columns);
-        margin-top : 4%;
+        margin-top : 3%;
       }
       .booking-box {
         @include span-columns(3, $itinerary-box-columns, 3%);
-        margin-top : 3%;
+        margin-top : 1.5%;
         table {
           width : 100%;
           a {
