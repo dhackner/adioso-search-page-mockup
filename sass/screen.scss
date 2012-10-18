@@ -15,6 +15,7 @@ $grey                         : #f4f4f4;
 $dark-grey                    : #e5e5e5;
 $darkest-grey                 : #7f7f7f;
 $blackish-grey                : #585858;
+$hovering-color               : #fbfbfb;
 $base-font                    : 500 16px/20px "Helvetica Neue", sans-serif;
 $medium-font                  : 200 23px/30px "Helvetica Neue", sans-serif;
 $big-font                     : 200 33px/40px "Helvetica Neue", sans-serif;
@@ -209,6 +210,9 @@ body {
           color : $price-blue;
           font  : $medium-font;
         }
+        input[type='button'] {
+          @include sassy-button("matte", 5px, 11px, $hovering-color, $dark-grey, $darkest-grey);        
+        }
       }
       .times-box {
         $times-columns : 3.5;
@@ -229,22 +233,18 @@ body {
         }
         .timecell {
           @include span-columns(.5, 3);
-            padding-top : 5%;
-            padding-right : 1%;
+          padding-top : 5%;
+          padding-right : 1%;
         }
         .citycell {
           @include span-columns(1.5, 3);
-            padding-top : 5%;
+          padding-top : 5%;
+          color : $blackish-grey;
         }
         .codecell {
           @include span-columns(.5, 3);
           @include omega;
-            padding-top : 5%;
-        }
-        span.city {
-          color : $blackish-grey;
-        }
-        span.code {
+          padding-top : 5%;
         }
       }
       .stops-box {
@@ -272,7 +272,7 @@ body {
       }
     }
     .itinerary-box.hovering {
-      background-color: #fbfbfb;
+      background-color: $hovering-color;
     }
     .itinerary-box.selected {
       border-color : $adioso-orange-color;
