@@ -13,7 +13,7 @@ $price-blue                   : #3B84DD;
 $filters-container-background : #b6ffd0;
 $grey                         : #f4f4f4;
 $dark-grey                    : #e5e5e5;
-$darkest-grey                 : #7f7f7f;
+$darker-grey                  : #7f7f7f;
 $blackish-grey                : #585858;
 $hovering-color               : #fbfbfb;
 $base-font                    : 500 16px/20px "Helvetica Neue", sans-serif;
@@ -174,7 +174,7 @@ body {
     @include pull(2);
     @include border-right-radius(7px);
     background-color : $dark-grey;
-    color            : $darkest-grey;
+    color            : $darker-grey;
     margin-top       : 7%;
     margin-bottom    : 2%;
     padding-top      : 1%;
@@ -211,14 +211,14 @@ body {
           font  : $medium-font;
         }
         input[type='button'] {
-          @include sassy-button("matte", 5px, 11px, $hovering-color, $dark-grey, $darkest-grey);        
+          @include sassy-button("matte", 5px, 11px, $hovering-color, $dark-grey, $darker-grey);        
         }
       }
       .times-box {
         $times-columns : 3.5;
         @include span-columns($times-columns, $itinerary-box-columns, 1%);
 
-        color : $darkest-grey;
+        color : $darker-grey;
         .outbound {
           @include span-columns(3, 3);
           border-bottom-style : solid;
