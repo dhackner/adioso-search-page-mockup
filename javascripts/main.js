@@ -13,9 +13,13 @@ $(document).ready(function() {
     });
 
     $('div.itinerary-box').hover(function() {
-      $(this).addClass('hovering', 50);
+      $(this).addClass('hovering');
     }, function() {
-      $(this).removeClass('hovering', 50);
+      $(this).removeClass('hovering');
+    });
+
+    $('div.itinerary-box > .price-box > .btn').click(function(event){
+      event.stopPropagation();
     });
   });
 });
