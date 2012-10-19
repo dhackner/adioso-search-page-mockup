@@ -205,14 +205,19 @@ body {
 
       &.hovering {
         background-color: $hovering-color;
-        .price-box>.btn{
-          display : inline-block;
+        .price-box>.btn {
+          @include sassy-button('flat', 5px, 11px, $hovering-color, $dark-grey, $darker-grey, 'false');
+          .refresh-command {display:inline-block;}
+          .refresh-time  {display:none;}
         }
       }
 
       &.selected {
         background-color : white;
         border-color : $adioso-orange-color;
+        .price-box>.btn {
+          @include sassy-button('flat', 5px, 11px, white, $dark-grey, $darker-grey, 'false');
+        }
       }
 
       .price-box {
@@ -227,8 +232,9 @@ body {
           font  : $medium-font;
         }
         .btn {
-          @include sassy-button("matte", 5px, 11px, $hovering-color, $dark-grey, $darker-grey);
-          display : none;
+          @include sassy-button('flat', 5px, 11px, $grey, $dark-grey, $darker-grey, 'false');
+          .refresh-command {display:none;}
+          .refresh-time  {display:inline-block;}
         }
       }
       .times-box {
