@@ -205,9 +205,8 @@ body {
 
       &.hovering {
         background-color: $hovering-color;
-        input[type='button'] {
-          display : block;
-          @include sassy-button("matte", 5px, 11px, $hovering-color, $dark-grey, $darker-grey);
+        .price-box>.btn{
+          display : inline-block;
         }
       }
 
@@ -227,7 +226,8 @@ body {
           color : $price-blue;
           font  : $medium-font;
         }
-        input {
+        .btn {
+          @include sassy-button("matte", 5px, 11px, $hovering-color, $dark-grey, $darker-grey);
           display : none;
         }
       }

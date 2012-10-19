@@ -1696,8 +1696,34 @@ body * {
   background-color: #fbfbfb;
 }
 /* line 208, ../sass/screen.scss */
-.main .itineraries-container .itinerary-box.hovering input[type='button'] {
-  display: block;
+.main .itineraries-container .itinerary-box.hovering .price-box > .btn {
+  display: inline-block;
+}
+/* line 213, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box.selected {
+  background-color: white;
+  border-color: #f57931;
+}
+/* line 218, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .price-box {
+  width: 12.5%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
+  margin-top: 1%;
+}
+/* line 221, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .price-box .price {
+  color: #3b84dd;
+  font: 200 33px/40px "Helvetica Neue", sans-serif;
+}
+/* line 225, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .price-box .currency {
+  color: #3b84dd;
+  font: 200 23px/30px "Helvetica Neue", sans-serif;
+}
+/* line 229, ../sass/screen.scss */
+.main .itineraries-container .itinerary-box .price-box .btn {
   font-size: 11px;
   padding: 0.5em 1.5em;
   display: inline-block;
@@ -1720,13 +1746,14 @@ body * {
   border: 1px solid #d8d8d8;
   color: #7f7f7f;
   text-shadow: white 0 1px 0;
+  display: none;
 }
 /* line 15, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.main .itineraries-container .itinerary-box.hovering input[type='button']:hover {
+.main .itineraries-container .itinerary-box .price-box .btn:hover {
   text-decoration: none;
 }
 /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.main .itineraries-container .itinerary-box.hovering input[type='button']:hover {
+.main .itineraries-container .itinerary-box .price-box .btn:hover {
   background-color: #d8d8d8;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #eeeeee), color-stop(75%, #d8d8d8));
   background: -webkit-linear-gradient(#eeeeee 3%, #d8d8d8 75%);
@@ -1735,13 +1762,13 @@ body * {
   background: linear-gradient(#eeeeee 3%, #d8d8d8 75%);
 }
 /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.main .itineraries-container .itinerary-box.hovering input[type='button']:active {
+.main .itineraries-container .itinerary-box .price-box .btn:active {
   -webkit-box-shadow: #d1d1d1 0 1px 2px inset;
   -moz-box-shadow: #d1d1d1 0 1px 2px inset;
   box-shadow: #d1d1d1 0 1px 2px inset;
 }
 /* line 6, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.main .itineraries-container .itinerary-box.hovering input[type='button'].disabled, .main .itineraries-container .itinerary-box.hovering input[type='button'][disabled] {
+.main .itineraries-container .itinerary-box .price-box .btn.disabled, .main .itineraries-container .itinerary-box .price-box .btn[disabled] {
   opacity: 0.6;
   background: #e5e5e5;
   cursor: default;
@@ -1750,36 +1777,9 @@ body * {
   box-shadow: none;
 }
 /* line 73, ../../../../../.rvm/gems/ruby-1.9.3-head/gems/sassy-buttons-0.1.4/stylesheets/_sassy-buttons.sass */
-.main .itineraries-container .itinerary-box.hovering input[type='button']::-moz-focus-inner {
+.main .itineraries-container .itinerary-box .price-box .btn::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
-}
-/* line 214, ../sass/screen.scss */
-.main .itineraries-container .itinerary-box.selected {
-  background-color: white;
-  border-color: #f57931;
-}
-/* line 219, ../sass/screen.scss */
-.main .itineraries-container .itinerary-box .price-box {
-  width: 12.5%;
-  float: left;
-  margin-right: 0%;
-  display: inline;
-  margin-top: 1%;
-}
-/* line 222, ../sass/screen.scss */
-.main .itineraries-container .itinerary-box .price-box .price {
-  color: #3b84dd;
-  font: 200 33px/40px "Helvetica Neue", sans-serif;
-}
-/* line 226, ../sass/screen.scss */
-.main .itineraries-container .itinerary-box .price-box .currency {
-  color: #3b84dd;
-  font: 200 23px/30px "Helvetica Neue", sans-serif;
-}
-/* line 230, ../sass/screen.scss */
-.main .itineraries-container .itinerary-box .price-box input {
-  display: none;
 }
 /* line 234, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box {
