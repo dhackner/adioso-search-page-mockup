@@ -1217,12 +1217,18 @@ ul.icons li .icon-large:before {
   content: "\f200";
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
+[class^='icon-']:before {
+  color: #7f7f7f;
+  font-size: 1em;
+}
+
+/* line 28, ../sass/screen.scss */
 span {
   font: 500 16px/20px "Helvetica Neue", sans-serif;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 body {
   *zoom: 1;
   max-width: 100.0%;
@@ -1246,7 +1252,7 @@ body * {
   box-sizing: border-box;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .boxes {
   padding-left: 10.0%;
   padding-right: 10.0%;
@@ -1258,11 +1264,11 @@ body * {
   background-color: white;
   padding-bottom: 2%;
 }
-/* line 46, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 .boxes .image {
   padding-bottom: 3%;
 }
-/* line 48, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .boxes .image img {
   width: 8.33333%;
   float: left;
@@ -1270,7 +1276,7 @@ body * {
   display: inline;
   margin-right: 91.66667%;
 }
-/* line 55, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .boxes .labels div {
   width: 25%;
   float: left;
@@ -1284,16 +1290,16 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 58, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .boxes .labels div span {
   color: #7f7f7f;
   font-size: 60%;
 }
-/* line 65, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .boxes .inputs {
   padding-bottom: 6%;
 }
-/* line 67, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .boxes .inputs div {
   width: 25%;
   float: left;
@@ -1307,7 +1313,7 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 70, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .boxes .inputs div input {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -1318,7 +1324,7 @@ body * {
   padding: 3%;
   width: 85%;
 }
-/* line 76, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .boxes .inputs div button.search-button {
   font-size: 13px;
   padding: 0.5em 1.5em;
@@ -1376,16 +1382,16 @@ body * {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 82, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .boxes .question {
   color: #e5e5e5;
 }
-/* line 84, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .boxes .question span.suggestion {
   color: #5496ea;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .main {
   padding-left: 10.0%;
   padding-right: 10.0%;
@@ -1399,7 +1405,7 @@ body * {
   border-top-color: #e5e5e5;
   padding-top: 1%;
 }
-/* line 98, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .main div.header {
   width: 100%;
   float: right;
@@ -1407,11 +1413,11 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 100, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .main div.header div {
   padding-top: 1%;
 }
-/* line 105, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .main div.header div span.description {
   width: 91.66667%;
   float: left;
@@ -1419,7 +1425,7 @@ body * {
   display: inline;
   font: 200 33px/40px "Helvetica Neue", sans-serif;
 }
-/* line 109, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .main div.header div button.watch-button {
   width: 8.33333%;
   float: right;
@@ -1482,11 +1488,11 @@ body * {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 114, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .main div.header div {
   padding-bottom: 1%;
 }
-/* line 119, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .main div.header div div.breadcrumbs {
   width: 66.66667%;
   float: left;
@@ -1495,16 +1501,16 @@ body * {
   padding-top: 2%;
   color: #f57931;
 }
-/* line 123, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .main div.header div div.breadcrumbs span:first-child:before {
   content: "";
 }
-/* line 126, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .main div.header div div.breadcrumbs span:before {
   color: black;
   content: " > ";
 }
-/* line 131, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .main div.header div .social-buttons {
   width: 33.33333%;
   float: right;
@@ -1512,11 +1518,11 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 133, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .main div.header div .social-buttons img {
   width: 100%;
 }
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .main div.header div.filters-container {
   padding-left: 3.0%;
   padding-right: 3.0%;
@@ -1536,7 +1542,7 @@ body * {
   font: 200 33px/40px "Helvetica Neue", sans-serif;
   color: #50735C;
 }
-/* line 149, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .main div.graph-container {
   width: 100%;
   float: right;
@@ -1546,11 +1552,11 @@ body * {
   margin-top: 3%;
   margin-bottom: 3%;
 }
-/* line 153, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .main div.graph-container img {
   width: 100%;
 }
-/* line 159, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .main div.active-filter-wrapper div.filters-list {
   padding-left: 1.0%;
   padding-right: 1.0%;
@@ -1569,7 +1575,7 @@ body * {
   padding-bottom: .5%;
   background-color: #e5e5e5;
 }
-/* line 166, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .main div.active-filter-wrapper div.filters-list button {
   font-size: 11px;
   padding: 0.5em 1.5em;
@@ -1627,7 +1633,7 @@ body * {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 172, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .main div.today {
   width: 33.33333%;
   float: left;
@@ -1648,7 +1654,7 @@ body * {
   padding-top: 1%;
   padding-bottom: 1%;
 }
-/* line 183, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .main div.today span {
   width: 50%;
   float: right;
@@ -1656,7 +1662,7 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 188, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .main .itineraries-container {
   width: 100%;
   float: right;
@@ -1664,7 +1670,7 @@ body * {
   #margin-left: 0%;
   display: inline;
 }
-/* line 191, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box {
   padding-left: 3.0%;
   padding-right: 3.0%;
@@ -1685,11 +1691,11 @@ body * {
   padding-top: 1%;
   padding-bottom: 1%;
 }
-/* line 203, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box.hovering {
   background-color: #fbfbfb;
 }
-/* line 205, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box.hovering input[type='button'] {
   display: block;
   font-size: 11px;
@@ -1748,12 +1754,12 @@ body * {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 211, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box.selected {
   background-color: white;
   border-color: #f57931;
 }
-/* line 216, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .price-box {
   width: 12.5%;
   float: left;
@@ -1761,21 +1767,21 @@ body * {
   display: inline;
   margin-top: 1%;
 }
-/* line 219, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .price-box .price {
   color: #3b84dd;
   font: 200 33px/40px "Helvetica Neue", sans-serif;
 }
-/* line 223, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .price-box .currency {
   color: #3b84dd;
   font: 200 23px/30px "Helvetica Neue", sans-serif;
 }
-/* line 227, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .price-box input {
   display: none;
 }
-/* line 231, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box {
   padding-left: 1.0%;
   padding-right: 1.0%;
@@ -1785,7 +1791,7 @@ body * {
   display: inline;
   color: #7f7f7f;
 }
-/* line 236, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box .outbound {
   width: 100%;
   float: left;
@@ -1795,21 +1801,21 @@ body * {
   border-bottom-width: 1px;
   border-bottom-color: #e5e5e5;
 }
-/* line 242, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box .inbound {
   width: 100%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 245, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box .imgcell {
   width: 16.66667%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 248, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box .timecell {
   width: 16.66667%;
   float: left;
@@ -1818,7 +1824,7 @@ body * {
   padding-top: 5%;
   padding-right: 1%;
 }
-/* line 253, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box .citycell {
   width: 50%;
   float: left;
@@ -1827,7 +1833,7 @@ body * {
   padding-top: 5%;
   color: #585858;
 }
-/* line 258, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .times-box .codecell {
   width: 16.66667%;
   float: left;
@@ -1839,7 +1845,7 @@ body * {
   display: inline;
   padding-top: 5%;
 }
-/* line 264, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .stops-box {
   width: 12.5%;
   float: left;
@@ -1847,15 +1853,15 @@ body * {
   display: inline;
   margin-top: 2.5%;
 }
-/* line 268, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .duration-box {
   width: 12.5%;
   float: left;
   margin-right: 0%;
   display: inline;
-  margin-top: 2.5%;
+  margin-top: 3%;
 }
-/* line 272, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .carriers-box {
   width: 8.33333%;
   float: left;
@@ -1863,7 +1869,7 @@ body * {
   display: inline;
   margin-top: 3%;
 }
-/* line 276, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .booking-box {
   padding-left: 3.0%;
   padding-right: 3.0%;
@@ -1873,11 +1879,11 @@ body * {
   display: inline;
   margin-top: 1.5%;
 }
-/* line 279, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .booking-box table {
   width: 100%;
 }
-/* line 281, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .main .itineraries-container .itinerary-box .booking-box table a {
   color: #f57931;
   font: 200 23px/30px "Helvetica Neue", sans-serif;

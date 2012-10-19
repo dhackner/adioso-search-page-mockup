@@ -21,7 +21,10 @@ $base-font                    : 500 16px/20px "Helvetica Neue", sans-serif;
 $medium-font                  : 200 23px/30px "Helvetica Neue", sans-serif;
 $big-font                     : 200 33px/40px "Helvetica Neue", sans-serif;
 
-
+[class^='icon-']:before {
+    color : $darker-grey;
+    font-size : 1em;
+}
 span {
   font: $base-font;
 }
@@ -267,7 +270,7 @@ body {
       }
       .duration-box {
         @include span-columns(1.5, $itinerary-box-columns);
-        margin-top : 2.5%;
+        margin-top : 3%;
       }
       .carriers-box {
         @include span-columns(1, $itinerary-box-columns);
